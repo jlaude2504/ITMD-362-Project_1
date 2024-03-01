@@ -20,3 +20,14 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
+
+/* Normalize Form */
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
