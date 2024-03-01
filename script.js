@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const interest = document.getElementById('interest').value;
   
       // Display confirmation message
-      alert(`Thank you, ${name}! You have successfully signed up for ${interest}. We will contact you at ${email}.`);
+      alert("Thank you, ${name}! You have successfully signed up for ${interest}. We will contact you at ${email}.");
   
       form.reset();
     });
