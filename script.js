@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Display confirmation message
       alert("Thank you, ${name}! You have successfully signed up for ${interest}. We will contact you at ${email}.");
   
-      form.reset();
+
     });
   });
