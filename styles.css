@@ -62,5 +62,28 @@ body {
     background-color: #0056b3;
   }
 
+/* Media Queries */
+
+/* Styles for screens smaller than 600px */
+@media (min-width: 600px) {
+    body {
+      padding: 40px;
+    }
+    
+    header {
+      margin-bottom: 40px;
+    }
+    
+    main {
+      padding: 20px;
+    }
+  }
   
+  /* Styles for screens larger than 900px */
+  @media (min-width: 900px) {
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
   
