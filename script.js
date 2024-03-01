@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
       
-     
+      // Get user input
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const interest = document.getElementById('interest').value;
+  
+
     });
   });
