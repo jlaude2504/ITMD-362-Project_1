@@ -37,3 +37,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+/* Remove default button styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Remove default select styling */
+select {
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
