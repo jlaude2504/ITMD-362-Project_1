@@ -1,52 +1,58 @@
-/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom, #dd1515, #2a1bd0);
     color: #333;
     padding: 20px;
-  }
-  
-  header {
+    transition: all 0.3s ease;
+}
+
+header {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
-  main {
+}
+
+header h1 {
+    font-size: 5em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+header p {
+    font-size: 2.5em;
+    color: #000000;
+}
+
+main {
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 20px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  select {
-    width: 100%;
+    color: #007bff;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: calc(100% - 26px); /* Adjusted width for consistent spacing */
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
+    border: 3px solid #ccc;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+}
+
+button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -56,45 +62,69 @@ body {
     color: #fff;
     font-size: 1em;
     cursor: pointer;
-  }
-  
-  button:hover {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #0056b3;
-  }
+}
 
 /* Media Queries */
 
-/* Styles for screens smaller than 600px */
 @media (min-width: 600px) {
     body {
-      padding: 40px;
+        padding: 40px;
     }
-    
+
     header {
-      margin-bottom: 40px;
+        margin-bottom: 40px;
     }
-    
+
     main {
-      padding: 20px;
+        padding: 30px;
     }
-  }
-  
-/* Styles for screens between 600px and 900px */
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        padding: 12px;
+        width: calc(100% - 26px); 
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.2em;
+    }
+}
+
 @media (min-width: 600px) and (max-width: 900px) {
     header h1 {
-      font-size: 1.5em;
+        font-size: 2em;
     }
-  
-    header p {
-      font-size: 1em;
-    }
-  }
 
-  /* Styles for screens larger than 900px */
-  @media (min-width: 900px) {
-    body {
-      max-width: 900px;
-      margin: 0 auto;
+    header p {
+        font-size: 1.2em;
     }
-  }
-  
+
+    main {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        max-width: 1200px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+}
